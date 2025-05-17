@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Menaria | Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+      padding: 10px;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 2.5em;
+      animation: bounceIn 1s ease;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #3498db;
+      transform: scale(1.1);
+    }
+
+    section {
+      margin: 30px 0;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeInUp 0.8s ease forwards;
+      animation-delay: calc(0.2s * var(--section-index));
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-category, .project {
+      margin-bottom: 20px;
+    }
+
+    .skill-category h3, .project h3 {
+      color: #34495e;
+      margin-bottom: 8px;
+      font-size: 1.4em;
+    }
+
+    .project {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project a {
+      color: #2980b9;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #e74c3c;
+      transform: scale(1.05);
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    #contact iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+      margin: 0 auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 30px;
+      border-radius: 8px;
+      animation: fadeIn 1s ease;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      section {
+        padding: 10px;
+      }
+
+      .project {
+        padding: 8px;
+      }
+
+      #contact iframe {
+        height: 700px; /* Adjust for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vishal Menaria</h1>
+    <p>Aspiring Data Analyst & MBA Student</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" style="--section-index: 1;">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>I'm an MBA student at Sir Padampat Singhania University, Udaipur, specializing in Business Analytics and Marketing. I hold a B.Sc. in Physics, Chemistry, and Mathematics. I also completed a two-month internship as a Data Analyst in the Executive Education Department at IIM Udaipur, where I contributed to data-driven insights. I'm passionate about using data to uncover business insights and have skills in Python, Excel, SQL, and Tableau.</p>
+  </section>
+
+  <section id="skills" style="--section-index: 2;">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="skill-category">
+      <h3>Programming & Data Analysis</h3>
+      <p>Python (NumPy, Pandas, Scikit-Learn), SQL, Excel</p>
+    </div>
+    <div class="skill-category">
+      <h3>Data Visualization</h3>
+      <p>Tableau, Matplotlib, Seaborn</p>
+    </div>
+    <div class="skill-category">
+      <h3>Machine Learning</h3>
+      <p>Random Forest, Regression, Classification</p>
+    </div>
+    <div class="skill-category">
+      <h3>Other</h3>
+      <p>Data Cleaning, Wrangling, Modeling</p>
+    </div>
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      <p>Communication, Teamwork, Problem-Solving, Time Management</p>
+    </div>
+  </section>
+
+  <section id="projects" style="--section-index: 3;">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+    <div class="project">
+      <h3>Coffee Shop Sales Analysis</h3>
+      <p>Analyzed multi-store sales data using Excel, built a dashboard showing sales, order size, and peak hours.</p>
+      <a href="https://github.com/vishalmenaria/coffee-shop-analysis" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+    </div>
+    <div class="project">
+      <h3>E-commerce Customer Behaviour Analysis</h3>
+      <p>Explored customer demographics and purchase patterns using Python. Built a Random Forest model with 98.5% accuracy to predict customer satisfaction.</p>
+      <a href="https://github.com/vishalmenaria/ecommerce-analysis" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+    </div>
+  </section>
+
+  <section id="certifications" style="--section-index: 4;">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+    <ul>
+      <li>Python Data Structures – University of Michigan (Coursera)</li>
+      <li>Programming for Everybody – University of Michigan (Coursera)</li>
+      <li>Fundamentals of Visualization with Tableau – University of California, Davis</li>
+      <li>Meta Data Analyst (Ongoing)</li>
+      <li>Python for Data Analyst – IIT Roorkee (NPTEL, Ongoing)</li>
+      <li>RS-CIT</li>
+    </ul>
+  </section>
+
+  <section id="contact" style="--section-index: 5;">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczGUauI4SMzSWlIAg6fXOItGc3HmY9Il-TcSxEdxvbbASE7g/viewform?embedded=true" width="800" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Vishal Menaria. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Console welcome message
+    console.log("Welcome to Vishal Menaria's Portfolio!");
+  </script>
+</body>
+</html>
