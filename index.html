@@ -15,14 +15,14 @@
 
     body {
       line-height: 1.6;
-      background: #f4f4f4;
+      background: #e5e7eb; /* Light gray */
       color: #333;
       padding: 10px;
       overflow-x: hidden;
     }
 
     header {
-      background: #2c3e50;
+      background: #006d77; /* Deep teal */
       color: #fff;
       padding: 20px 10px;
       text-align: center;
@@ -57,14 +57,15 @@
     }
 
     nav a:hover {
-      color: #3498db;
+      color: #ff6f61; /* Coral hover */
       transform: scale(1.1);
     }
 
     section {
       margin: 30px 0;
       padding: 15px;
-      background: #fff;
+      background: #f9f9f9; /* Off-white */
+      border: 2px solid #6b7280; /* Slate gray */
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       opacity: 0;
@@ -73,7 +74,7 @@
     }
 
     h2 {
-      color: #2c3e50;
+      color: #006d77; /* Deep teal */
       margin-bottom: 15px;
       font-size: 1.8em;
       display: flex;
@@ -86,7 +87,7 @@
     }
 
     .skill-category h3, .project h3 {
-      color: #34495e;
+      color: #374151; /* Dark gray */
       margin-bottom: 8px;
       font-size: 1.4em;
     }
@@ -104,7 +105,7 @@
     }
 
     .project a {
-      color: #2980b9;
+      color: #4682b4; /* Steel blue */
       font-weight: bold;
       text-decoration: none;
       display: inline-flex;
@@ -115,7 +116,7 @@
     }
 
     .project a:hover {
-      color: #e74c3c;
+      color: #ff6f61; /* Coral hover */
       transform: scale(1.05);
     }
 
@@ -129,14 +130,282 @@
       max-width: 800px;
       height: 600px;
       border: none;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       display: block;
+    }
+
+    #contact p {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #contact a {
+      color: #4682b4; /* Steel blue */
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #ff6f61; /* Coral hover */
+      transform: scale(1.05);
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #2c3e50;
+      background: #006d77; /* Deep teal */
+      color: #fff;
+      margin-top: 30px;
+      border-radius: 8px;
+      animation: fadeIn 1s ease;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* understood, I'll adjust the color scheme to a more professional palette while keeping all other elements of Vishal Menaria's portfolio website intact. This includes the IIM Udaipur internship in the About Me section, the restored contact links (email, phone, GitHub, LinkedIn), the Google Form iframe, motion, Font Awesome icons, hover effects, and smooth scrolling. The GitHub project links will remain placeholders, and I'll guide you on updating them. The Google Form will use the provided link, with troubleshooting steps to ensure it displays. Below is the updated `index.html` with a new professional color scheme, using the same `artifact_id` as the previous version.
+
+### New Professional Color Scheme
+The previous colors (`#1e90ff` blue, `#f39c12` orange, `#27ae60` green, gradient `#e6f0fa` to `#ffffff`) were vibrant but may have been too bold. For a more professional, tech-themed aesthetic suitable for a data analyst, I'll use:
+
+- **Primary Color (Headers, Footer, Headings):** Deep teal (`#006d77`) – Sophisticated and modern, often used in tech and analytics interfaces.
+- **Secondary Color (Links, Buttons):** Steel blue (`#4682b4`) – Clean and professional, ideal for interactive elements.
+- **Hover Effects:** Coral (`#ff6f61`) – A warm, subtle accent that adds energy without being distracting.
+- **Section Background:** Off-white (`#f9f9f9`) – Neutral and clean, replacing the gradient for simplicity.
+- **Section Border:** Slate gray (`#6b7280`) – Subtle and modern, adding definition.
+- **Body Background:** Light gray (`#e5e7eb`) – Warmer than `#f4f4f4`, enhancing readability.
+
+This palette is professional, cohesive, and aligns with data analytics branding.
+
+### Addressing GitHub and LinkedIn Links
+- **GitHub Links:** The project links (`https://github.com/vishalmenaria/coffee-shop-analysis`, `https://github.com/vishalmenaria/ecommerce-analysis`) are placeholders and may not exist. Update them with your actual repository URLs by creating repos on GitHub and copying the URLs. Provide the correct URLs for inclusion if available.
+- **LinkedIn Link:** The placeholder `https://www.linkedin.com/in/vishalmenaria` may be incorrect. Replace it with your actual LinkedIn profile URL (e.g., `https://www.linkedin.com/in/vishal-menaria-123456`). Share the URL for accuracy.
+- **GitHub Profile:** Verify `https://github.com/vishalmenaria` is your correct profile. If not, update the Contact section link.
+
+### Ensuring Google Form Displays
+The Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSczGUauI4SMzSWlIAg6fXOItGc3HmY9Il-TcSxEdxvbbASE7g/viewform?usp=header`) may not display due to sharing settings or an invalid ID. To fix:
+
+1. **Check Sharing Settings:**
+   - Open the form in Google Forms ([forms.google.com](https://forms.google.com)).
+   - Click "Send" > Link tab, set "General access" to "Anyone with the link".
+   - In Settings (gear icon) > Responses, uncheck "Require sign-in" and organization restrictions.
+   - Test the link in an incognito window.
+
+2. **Verify Form ID:**
+   - If the ID (`1FAIpQLSczGUauI4SMzSWlIAg6fXOItGc3HmY9Il-TcSxEdxvbbASE7g`) is incorrect, get the embed src:
+     - Click "Send" > Embed tab, copy the `<iframe>` src.
+     - Update the `<iframe>` src in the code.
+
+3. **Recreate Form if Needed:**
+   - If inaccessible, recreate with:
+     - **Title:** "Contact Vishal – Ask a Question or Collaborate"
+     - **Description:** "Welcome! I'm Vishal Menaria, a data analyst passionate about uncovering insights through data. Whether you're a recruiter, fellow analyst, student, business owner, or just curious, I'd love to hear from you. Fill out this form to ask a question, propose a collaboration, or share an idea!"
+     - **Fields:** Name (Short answer, Required), Email (Short answer, Required, Email validation), Category (Multiple choice, Required, options: Recruiter, Analyst, Student, Business Owner, Other), Subject (Short answer, Required), Message (Paragraph, Required), Optional Link (Short answer, Not required, URL validation).
+     - **Settings:** Enable email notifications, set confirmation message: "Thank you for reaching out! I'll review your message and get back to you soon. Feel free to connect with me on GitHub (github.com/vishalmenaria) or email (vishalkun530@gmail.com) in the meantime."
+   - Update the `<iframe>` src.
+
+### Updated Website Code
+The `index.html` includes the new color scheme, internship detail, contact links, placeholder GitHub links, and Google Form iframe.
+
+<xaiArtifact artifact_id="8b00c9b9-442c-4beb-8daa-a6485ac35e3c" artifact_version_id="dfc79753-943b-4156-85b7-80259c817dbd" title="index.html" contentType="text/html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Menaria | Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #e5e7eb; /* Light gray */
+      color: #333;
+      padding: 10px;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #006d77; /* Deep teal */
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 2.5em;
+      animation: bounceIn 1s ease;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61; /* Coral hover */
+      transform: scale(1.1);
+    }
+
+    section {
+      margin: 30px 0;
+      padding: 15px;
+      background: #f9f9f9; /* Off-white */
+      border: 2px solid #6b7280; /* Slate gray */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeInUp 0.8s ease forwards;
+      animation-delay: calc(0.2s * var(--section-index));
+    }
+
+    h2 {
+      color: #006d77; /* Deep teal */
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-category, .project {
+      margin-bottom: 20px;
+    }
+
+    .skill-category h3, .project h3 {
+      color: #374151; /* Dark gray */
+      margin-bottom: 8px;
+      font-size: 1.4em;
+    }
+
+    .project {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project a {
+      color: #4682b4; /* Steel blue */
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #ff6f61; /* Coral hover */
+      transform: scale(1.05);
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    #contact iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    #contact p {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #contact a {
+      color: #4682b4; /* Steel blue */
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #ff6f61; /* Coral hover */
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #006d77; /* Deep teal */
       color: #fff;
       margin-top: 30px;
       border-radius: 8px;
@@ -280,6 +549,10 @@
   <section id="contact" style="--section-index: 5;">
     <h2><i class="fas fa-envelope"></i> Contact</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczGUauI4SMzSWlIAg6fXOItGc3HmY9Il-TcSxEdxvbbASE7g/viewform?embedded=true" width="800" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:vishalkun530@gmail.com">vishalkun530@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918114494484">+91 8114494484</a></p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/vishalmenaria" target="_blank">github.com/vishalmenaria</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/vishalmenaria" target="_blank">linkedin.com/in/vishalmenaria</a></p>
   </section>
 
   <footer>
